@@ -13,14 +13,14 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       Starter for Vue.js Development with Nuxt 3.
     </h2>
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
-      <AdvertiseBox header="PrimeVue 3.33" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 3.43.x" icon="prime-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme & Layout" icon="prime-check-circle" color="green-600">
         Free Sakai theme
       </AdvertiseBox>
       <AdvertiseBox header="FormKit" icon="prime-check-circle" color="purple-500">
-        FormKit 1.0 for Form Validation
+        FormKit 1.2.x for Form Validation
       </AdvertiseBox>
       <AdvertiseBox header="UnoCSS" icon="prime-check-circle" color="green-600">
         UnoCSS for rapid styling
@@ -35,10 +35,10 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="Nuxt 3.7" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt 3.8" icon="prime-check-circle" color="green-400">
         Pages, Layouts, ...
       </AdvertiseBox>
-      <AdvertiseBox header="Nuxt Content 2.7" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt Content 2.9" icon="prime-check-circle" color="green-400">
         Markdown, YML, CSV or JSON and MDC Syntax
       </AdvertiseBox>
       <AdvertiseBox header="I18n" icon="prime-check-circle" color="green-600">
@@ -58,9 +58,6 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       </AdvertiseBox>
       <AdvertiseBox header="Vitest" icon="prime-check-circle" color="blue-600">
         Testing with Vitest
-      </AdvertiseBox>
-      <AdvertiseBox header="Histoire" icon="prime-check-circle" color="green-600">
-        Interactive Component Playgrounds
       </AdvertiseBox>
     </div>
   </div>

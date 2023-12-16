@@ -1,35 +1,28 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export function updateTheme (themeName: string, themeColor: string) {
-  return `https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/${themeName}-${themeColor}/theme.css`
+  return `/themes/${themeName}-${themeColor}/theme.css`
 }
 
 export const useThemeStore = defineStore('theme', {
   // a function that returns a fresh state
   state: () => ({
-    themeName: 'vela',
-    themeColor: 'blue',
-    link: 'https://cdn.jsdelivr.net/npm/primevue@latest/resources/themes/vela-blue/theme.css'
+    themeName: 'lara-dark',
+    themeColor: 'teal',
+    link: '/themes/lara-dark-teal/theme.css'
   }),
   // optional getters
   getters: {
     theme: (state) => {
       return `${state.themeName}-${state.themeColor}`
     },
-    isDarkMode: state => state.themeName !== 'saga'
+    isDarkMode: state => state.themeName === 'lara-dark'
   },
   // optional actions
   actions: {
-    setDark () {
-      this.themeName = 'arya'
-      this.link = updateTheme(this.themeName, this.themeColor)
-    },
-    setDim () {
-      this.themeName = 'vela'
-      this.link = updateTheme(this.themeName, this.themeColor)
-    },
-    setLight () {
-      this.themeName = 'saga'
+
+    setTheme (themeName:string) {
+      this.themeName = themeName
       this.link = updateTheme(this.themeName, this.themeColor)
     },
     setColor (colorName: string) {

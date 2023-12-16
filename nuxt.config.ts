@@ -11,8 +11,8 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    'nuxt-primevue',
     '@formkit/nuxt',
-    '@sfxcode/nuxt-primevue',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/i18n',
@@ -35,29 +35,23 @@ export default defineNuxtConfig({
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'de', file: 'de.json', name: 'German' }
     ],
-
     vueI18n: './vue-i18n.options.ts'
-
   },
   primevue: {
-    config: {
+    components: {
+      exclude: ['Chart']
+    },
+    options: {
       ripple: true
     }
   },
   css: [
     'primevue/resources/primevue.css',
     'primeicons/primeicons.css',
-    '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
   ],
-  pinia: {
-    autoImports: [
-      // automatically imports `defineStore`
-      'defineStore' // import { defineStore } from 'pinia'
-    ]
-  },
   build: {
-    transpile: ['nuxt', 'primevue']
+    transpile: ['nuxt', 'primevue', 'formkit-primevue']
   },
   sourcemap: {
     client: false,
