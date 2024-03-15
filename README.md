@@ -11,7 +11,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 ## Features
 
 - [Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
-- [PrimeVue](https://primevue.org/) 3.40.x with free Sakai Layout and Lara Theme
+- [PrimeVue](https://primevue.org/) 3.49.x with free Sakai Layout and Aura Theme
 - [Formkit-PrimeVue](https://formkit-primevue.netlify.app/) PrimeVue Formkit Integration
 - [Vite](https://vitejs.dev/) - Instant HMR
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
@@ -99,3 +99,6 @@ I use IntelliJ with VUE.js plugin.
 JetBrains is supporting this open source project with:
 
 [![Intellij IDEA](http://www.jetbrains.com/img/logos/logo_intellij_idea.png)](http://www.jetbrains.com/idea/)
+
+
+![](public/starter.png)
